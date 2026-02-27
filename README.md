@@ -51,7 +51,11 @@ Este proyecto resuelve limitaciones críticas de infraestructura en el ecosistem
 ---
 
 ## 🚀 Hoja de Ruta (Roadmap)
-- [ ] **Automatización One-Click**: Triggers automáticos desde el Dashboard.
-- [ ] **Continuation Tokens**: Soporte para directorios masivos (+6 min).
-- [ ] **Métricas de Transferencia**: Visualización de velocidad y volumen total.
+- [ ] **Automatización One-Click**: Implementación de un botón para crear activadores (triggers) automáticos, evitando la necesidad de interactuar con el editor de código.
+- [ ] **Continuation Tokens & Chained Executions**: Sistema de paginado y auto-reanudación mediante ScriptApp.newTrigger() para procesamientos masivos que superen los 6 min, logrando una autonomía del 100% (Zero-Setup).
+- [ ] **Monitor de Estado en Home (C3)**: Configuración de celda de telemetría para informar en tiempo real el último archivo procesado y el estado general sin consultar los Logs.
+- [ ] **Smart Shortcuts (Revinculación)**: Sistema de doble pasada para evaluar accesos directos y reescribir su TargetId, asegurando que apunten a las copias del backup y no a los originales.
+- [ ] **Data Lineage & Formula Translator**: Script de post-procesamiento para realizar un Find & Replace automático de IDs en fórmulas (como IMPORTRANGE) dentro de los Sheets copiados, manteniendo la integridad referencial.
+- [ ] **Métricas de Transferencia**: Visualización de velocidad de procesamiento y volumen total respaldado por sesión.
+
 
