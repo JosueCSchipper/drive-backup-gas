@@ -10,7 +10,7 @@ Este proyecto resuelve limitaciones críticas de infraestructura en el ecosistem
 
 ## 🛠️ El Problema
 * **Limitaciones de Copia Nativa**: Google Drive no permite copiar carpetas de forma recursiva manteniendo su jerarquía original.
-* **Vulnerabilidad del Código**: El historial de versiones de Google no respalda de forma independiente el código de Apps Script. Drive-BackUp funciona como un sistema de recuperación de desastres para scripts.
+* * **DRP (Disaster Recovery Plan) para Ecosistemas**: A diferencia del historial nativo de Apps Script —que es granular, difícil de restaurar y depende de la existencia del archivo original—, **Drive-BackUp** crea copias independientes y funcionales de archivos + scripts. Esto garantiza la recuperación inmediata ante borrados accidentales o corrupción de contenedores.
 * **Auditoría de Estado**: Evita los límites de 9 KB de memoria interna usando una base de datos externa (Logs) transparente y editable.
 
   <img src="./assets/logs.png" width="400" title="Logs de Auditoría">
@@ -57,5 +57,6 @@ Este proyecto resuelve limitaciones críticas de infraestructura en el ecosistem
 - [ ] **Smart Shortcuts (Revinculación)**: Sistema de doble pasada para evaluar accesos directos y reescribir su TargetId, asegurando que apunten a las copias del backup y no a los originales.
 - [ ] **Data Lineage & Formula Translator**: Script de post-procesamiento para realizar un Find & Replace automático de IDs en fórmulas (como IMPORTRANGE) dentro de los Sheets copiados, manteniendo la integridad referencial.
 - [ ] **Métricas de Transferencia**: Visualización de velocidad de procesamiento y volumen total respaldado por sesión.
+
 
 
