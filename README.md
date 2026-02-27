@@ -1,9 +1,10 @@
 # Drive-BackUp 0.94 🚀
-  <img src="./assets/home.png" width="400" title="Dashboard Principal Sanitizado">
 
 ### Motor de Respaldo Estructural y Preservación de Lógica para Google Drive
 
 Este proyecto resuelve limitaciones críticas de infraestructura en el ecosistema de Google Drive, permitiendo la clonación recursiva de directorios y la salvaguarda de la lógica de negocio contenida en scripts vinculados.
+
+<img src="./assets/home.png" width="400" title="Dashboard Principal Sanitizado">
 
 ---
 
@@ -20,6 +21,7 @@ Este proyecto resuelve limitaciones críticas de infraestructura en el ecosistem
 * **Algoritmo DFS (Depth-First Search)**: Recreación exacta de estructuras de directorios.
 * **Memoria Persistente en Logs**: Uso de la **Columna F** como base de datos de estado para evitar duplicados.
 * **Dashboard UX**: Interfaz con tooltips técnicos y scorecards semafóricos.
+
   <img src="./assets/tooltips.png" width="400" title="Tooltops">
 * **Filtrado Inteligente de Categorías**: Permite discriminar archivos por tipo (Documentos, Imágenes, etc.) y gestionar específicamente los archivos de la categoría "Otros" (ej: .zip, .py, .rar).
 
@@ -33,13 +35,18 @@ Este proyecto resuelve limitaciones críticas de infraestructura en el ecosistem
 ---
 
 ## ⚙️ Instrucciones de Configuración
-0. **Copia**: realizá una copia de la plantilla oficial y sigue las instrucciones de configuración:
-    👉 **[Hacer una copia del Template (Google Sheets)](https://docs.google.com/spreadsheets/d/1M1yTNfxu6S5bnt7rbE5D-_vjonyV33CGszxwY8JyY1I/copy)**
-1. **Destino**: Pegar el ID de la carpeta destino en la celda **B4**.
-2. **Orígenes**: Listar los IDs de las carpetas a respaldar en el rango **B8:B14**.
-3. **Filtros**: Seleccionar mediante los checkboxes si se desea incluir (**Solo**) o excluir (**Sin**) categorías específicas.
-4. **Ejecución**: Presionar el botón **"Hacer BackUp"** para iniciar el proceso incremental.
-5. **Mantenimiento**: Utilizar el botón **"Limpieza final"** para borrar directorios vacíos y actualizar métricas de volumen.
+1. **[Click aquí para copiar la Plantilla oficial]** (Se abrirá en una pestaña nueva).
+<p align="left">
+  <a href="https://docs.google.com/spreadsheets/d/1M1yTNfxu6S5bnt7rbE5D-_vjonyV33CGszxwY8JyY1I/copy" target="_blank">
+    <img src="https://img.shields.io/badge/COPIAR_TEMPLATE-Google_Sheets-green?style=for-the-badge&logo=googlesheets" alt="Copiar Template">
+  </a>
+</p>
+
+2. **Destino**: Pegar el ID de la carpeta destino en la celda **B4**.
+3. **Orígenes**: Listar los IDs de las carpetas a respaldar en el rango **B8:B14**.
+4. **Filtros**: Seleccionar mediante los checkboxes si se desea incluir (**Solo**) o excluir (**Sin**) categorías específicas.
+5. **Ejecución**: Presionar el botón **"Hacer BackUp"** para iniciar el proceso incremental.
+6. **Mantenimiento**: Utilizar el botón **"Limpieza final"** para borrar directorios vacíos y actualizar métricas de volumen.
 
 ---
 
@@ -47,3 +54,4 @@ Este proyecto resuelve limitaciones críticas de infraestructura en el ecosistem
 - [ ] **Automatización One-Click**: Triggers automáticos desde el Dashboard.
 - [ ] **Continuation Tokens**: Soporte para directorios masivos (+6 min).
 - [ ] **Métricas de Transferencia**: Visualización de velocidad y volumen total.
+
